@@ -1,0 +1,70 @@
+\chapter{第四章标题}
+
+\section{引言}
+
+\section{提出的方法或者框架名称}
+
+\subsection{框架概述}
+
+\subsection{子标题2}
+
+\subsection{子标题3}
+
+\subsection{子标题4}
+
+\subsection{子标题5}
+
+\section{实验与结果分析}
+
+\subsection{数据集与实验协议}
+
+\subsection{子标题2}
+
+\subsection{子标题3}
+
+表~\ref{tab:table2.1}~展示了所有对比方法在EAV与DEAP数据集上的定量化结果。评估指标包括准确率和F1分数；DEAP数据集的结果分别报告唤醒和效价维度的性能。
+
+\begin{table}[htb]
+    \centering
+    \wuhao
+    \caption{本章方法与基线方法在两个数据集上的性能对比}
+    \label{tab:table2.1}
+    \setlength{\tabcolsep}{2mm}
+    {\renewcommand{\arraystretch}{1.5}
+    \begin{tabular}{cccccc}
+        \toprule
+        \multirow{2}{*}{模态}& \multirow{2}{*}{方法}& \multicolumn{2}{c}{\makecell{EAV}}& \multicolumn{2}{c}{\makecell{DEAP（唤醒/效价）}}\\ 
+        \cmidrule(l){3-4} \cmidrule(l){5-6} 
+        &  &  准确率(\%) & F1 分数(\%) & 准确率(\%) & F1 分数(\%) \\
+        \midrule{}
+        \multirow{2}{*}{单模态}&  E&  53.35 ± 11.33& 52.03 ± 11.62 & 85.67 / 87.33& 84.53 / 86.97\\
+        &  V&   70.47 ± 6.14& 70.30 ± 6.15 & 92.77 / 94.67& 91.71 / 93.93\\
+        \midrule{}
+        \multirow{7}{*}{多模态}&  Concat&  73.73 ± 6.61& 73.37 ± 6.64 & 95.59 / 96.25& 94.21 / 95.85\\
+        &  Sum&  75.05 ± 6.54& 74.67 ± 6.66 & 95.46 / 96.62& 93.79 / 94.58\\
+        & FiLM& 72.28 ± 9.28& 71.26 ± 9.82 & 93.79 / 92.50& 92.91 / 91.75\\
+        & TFN& 76.87 ± 7.98& 75.77 ± 8.76 & 91.43 / 91.11& 90.17 / 91.98\\
+        & LMF&  74.65 ± 5.76& 74.37 ± 5.86 & 90.18 / 92.12& 89.95 / 90.83\\
+        & Attention& 75.74 ± 5.84& 75.43 ± 6.02 & 97.34 / 97.01& 96.29 / 96.66\\
+        & 本章方法& \textbf{88.19} ± 5.33& \textbf{87.82} ± 5.69 & \textbf{98.52} / \textbf{98.34}& \textbf{97.92} / \textbf{97.50}\\
+        \bottomrule
+    \end{tabular}}
+\end{table}
+
+\subsection{子标题4}
+
+\section{讨论与分析}
+
+\subsection{子标题1}
+
+\subsection{子标题2}
+
+\subsection{子标题3}
+
+\subsection{子标题4}
+
+\subsection{子标题5}
+
+\subsection{局限性与未来工作}
+
+\section{本章小结}

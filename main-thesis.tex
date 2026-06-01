@@ -1,0 +1,80 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\documentclass[master]{hdu-thesis}[]中不同的模式选择对应不同的模板%%%%
+%|master| 学术型硕士学位论文模板 |
+%|promaster| 专业学位硕士学位论文模板 |
+%|master_review| 学术型硕士送审模板 |
+%|promaster_review| 专业学位硕士送审模板 |
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[master]{hdu-thesis}
+% \documentclass[master_review]{hdu-thesis}
+% \documentclass[promaster]{hdu-thesis}
+% \documentclass[promaster_review]{hdu-thesis}
+
+\title{学位论文中文题目}{Thesis Title in English}%%%%%%论文标题，前者对应中文标题，后者对应英文标题
+\author{姓名}{Name}%%%%%%作者
+\advisor{姓名~教授}{Prof. Name}%%%%%%指导老师
+% \secondadvisor{导师姓名~职称}{Prof. Name}%%%%%%第二指导老师，没有一定要注释，大部分人没有第二指导老师，忽略这个命令即可
+\school{自动化学院}{School of Automation}%%%%学院
+\major{控制科学与工程}{Control Science and Engineering}%%%%%%%%%%专业
+\majorfield{专业领域中文名}{Major Field in English}%%%%%%专业领域（仅专硕填写，仅promaster模式封面显示）
+\authornumber{**********}%%%%%%学号
+\confidential{}%%%%%%密级（仅限于论文来源于国防军工项目时填写，非国防项目请留空）
+\delaypublic{否}%%%%%%是否延期公开
+\schoolcode{10336}%%%%%%学校代码
+\completedate{2026}{5}{May}  %%%%%%设计完成时间
+\authordirection{研究方向}{Research Interests}%%%%研究方向前者对应中文方向，后者对应英文，仅盲审模式使用
+
+\usepackage{makecell}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%插入封面%%%%%%%%%%%
+\makecover
+%%%%%%%%%%%%%%%%插入原创性声明%%%%%%%%%
+\makedeclaration
+
+%%%%%%%%%%%%%%%中文摘要%%%%%%%%%%%%%%
+\input{contents/cnabstract.tex}
+\input{contents/enabstract.tex}
+
+%%%%%%%%%%%%图目录%%%%%%%%%%%%%%%%
+\figurelist
+%%%%%%%%%%%%%%%%%%%
+
+% %%%%%%%%%%%%表格目录%%%%%%%%%%%%%
+\tablelist
+
+% %%%%%%%%%%%%目录%%%%%%%%%%%
+\tableofcontents
+
+% %%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%正文%%%%%%%%%%%%
+
+\input{chapter/introduction.tex}
+\input{chapter/preliminary.tex}
+\input{chapter/cha_3.tex} 
+\input{chapter/cha_4.tex}
+
+
+%%%%%%%%%%%%%%%%% 总结与展望 %%%%%%%%%%%%%%%%%%
+\chapter{总结与展望}
+
+\section{工作总结}
+
+\section{研究展望}
+
+%%%%%%%%%%%%%%%%%致谢%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{contents/acknowledgement.tex} 
+% 盲审不加致谢
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%参考文献%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\hdubibliography{ref/reference}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%个人成果%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \input{contents/personalresult.tex} %盲审不加个人成果而是全部放在附录中
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%附录%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{contents/appendix.tex}
+
+\end{document}
